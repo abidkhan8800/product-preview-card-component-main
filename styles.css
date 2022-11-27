@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Fraunces;
+    background-color: hsl(30, 38%, 92%);
     
 }
 p {
@@ -10,8 +11,6 @@ p {
 
 }
 .mainContainer{
-    background-color: hsl(30, 38%, 92%);
-    /* background-color: hsl(158, 36%, 37%); */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -32,8 +31,8 @@ p {
     background: url(./images/image-product-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 20rem;
-    min-height: 30rem;
+    width: 20rem;
+    height: 30rem;
     max-width: 40rem;
     max-height: 60rem;
 }
@@ -42,7 +41,7 @@ p {
     padding: 2em; 
     display: flex;
     flex-direction: column;
-    min-width: 15rem;
+    width: 15em;
 }
 
 #perfume-label{
@@ -62,6 +61,9 @@ p {
     color: hsl(228, 12%, 48%);
     font-size: 1rem;
     font-family: Fraunces;
+    word-wrap: break-word;
+    text-align: justify;
+
 }
 #price-container{
     display: flex;
@@ -96,4 +98,30 @@ p {
     /* font-size: 10px; */
     height: 15px;
     width: 14px;
+}
+
+/* Mobile desgin*/
+
+@media only screen and (max-width: 376px){
+    .mainContainer{
+       padding: 10px;
+       display: flex;
+
+    }
+    .center-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-container{
+        background: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 262px;
+
+    }
+
+    .content-container{
+        width: 20em;
+    }
 }

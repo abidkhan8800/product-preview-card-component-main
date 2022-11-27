@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Fraunces;
+    
+}
+p {
+    font-size: 14px;
+    color: hsl(212, 21%, 14%)
+
+}
+.mainContainer{
+    background-color: hsl(30, 38%, 92%);
+    /* background-color: hsl(158, 36%, 37%); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-container {
+    background-color:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container{
+    background: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 20rem;
+    min-height: 30rem;
+    max-width: 40rem;
+    max-height: 60rem;
+}
+
+.content-container{
+    padding: 2em; 
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+}
+
+#perfume-label{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+#perfume-header{
+    color:hsl(212, 21%, 14%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#perfume-description{
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    font-family: Fraunces;
+}
+#price-container{
+    display: flex;
+    align-items: center;
+}
+
+#price-container #new-price{
+   font-size: 2rem;
+   color:hsl(158, 36%, 37%);
+   font-weight: 700;
+   margin-right: 1rem
+}
+
+#old-price{
+    color: hsl(228, 12%, 48%);
+}
+
+#add-to-cart-button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-to-cart-button img{
+    margin-right: 10px;
+    /* font-size: 10px; */
+    height: 15px;
+    width: 14px;
+}
